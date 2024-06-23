@@ -1,0 +1,104 @@
+.lado {
+  background-color: #FFE6E6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding: 2rem;
+  margin-left: 10px;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.name {
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.log {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: azure;
+}
+
+.yo {
+  text-align: center;
+}
+
+.imagen-perfil {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.chamba {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.chamba div {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .lado {
+      background-color: #FFE6E6;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      padding: 1rem;
+      margin-left: 5px;
+  }
+
+  .name {
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+  }
+
+  .log {
+      font-size: 1em;
+      margin-bottom: 5px;
+      text-align: center;
+  }
+
+  .yo {
+      font-size: 0.8rem;
+      text-align: center;
+  }
+
+  .imagen-perfil {
+      width: 50px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 5px;
+  }
+
+  .chamba {
+      padding: 10px;
+      grid-template-rows: auto; 
+  }
+
+  .chamba div {
+      padding: 3px; 
+      font-size: 0.8em; 
+  }
+}

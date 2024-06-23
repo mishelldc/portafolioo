@@ -1,0 +1,8 @@
+.root{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 6rem repeat(2,1fr);
+    height: 560px;
+    gap: 4px;
+}

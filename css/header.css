@@ -1,0 +1,214 @@
+/* Estilos generales para todo el documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2.9rem;
+    margin-left: 10px;
+}
+
+nav {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav div:hover {
+    transition: 1ms;
+    background-color: rgba(128, 0, 128, 0.509);
+    border-radius: 10px;
+}
+
+.btn, .btn_header {
+    max-width: 100%;
+    width: 10rem;
+    height: 3.5rem;
+    background-color: magenta;
+    color: rgb(231, 26, 26);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn_header {
+    width: 10%;
+    max-width: 100%;
+    background-color: pink;
+    text-decoration: none;
+    color: black;
+}
+
+.btn_header:hover {
+    transition: 1ms;
+    background-color: rgba(128, 0, 128, 0.509);
+}
+
+.option img {
+    max-width: 100%;
+    width: 50px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 9px 8px 9px rgba(0, 0, 0, 0.3);
+}
+
+.caja1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.contenedor_padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    height: 100%;
+}
+
+.contenedor_padre img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: center;
+    color: #666;
+}
+
+.botoness {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.botoness a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    background-color: gainsboro;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    transition: background-color 1.5s ease;
+}
+
+.botoness a:hover {
+    background-color: gray;
+}
+
+.github {
+    background-color: #24292e;
+    color: #fff;
+}
+
+.github:hover {
+    background-color: #1b1f23;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 375px) {
+   
+    .header {
+        width: auto;
+
+        padding: 1.5rem; /* Reducir el padding del header */
+    }
+
+    nav {
+        height: auto; 
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    .btn, .btn_header {
+        width: 30%; 
+        height: 3rem; 
+        margin-bottom: 1rem;
+    }
+
+    .option img {
+        width: 20px; 
+        height: auto;
+        border-radius: 20px; 
+       background-color: red;
+       gap: 3px;
+    }
+
+    .caja1 {
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
+        padding: 1rem; 
+    }
+
+    .contenedor_padre {
+        padding: 10px; 
+    }
+
+    .contenedor_padre img {
+        width: 100%; 
+        max-width: none; 
+    }
+
+    .titulo {
+        font-size: 1.2em; 
+    }
+
+    .descripcion {
+        font-size: 0.9em; 
+    }
+
+    .botoness a {
+        padding: 8px 12px; 
+        font-size: 0.8rem; 
+        width: auto; 
+        height: 2rem; 
+    }
+}

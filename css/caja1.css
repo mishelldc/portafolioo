@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.contenedor_padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    height: 100%;
+}
+
+.contenedor_padre img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px; 
+    width: 10rem; 
+    height: 10rem; 
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: center;
+    color: #666;
+}
+
+.botoness {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.botoness a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black; 
+    background-color: gainsboro;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    transition: background-color 1.5s ease;
+}
+
+.botoness a:hover {
+    background-color: gray;
+}
+
+.github {
+    background-color: #24292e;
+    color: #fff;
+}
+
+.github:hover {
+    background-color: #1b1f23;
+}
+
+
+@media (max-width: 448px) {
+    .caja1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; 
+        padding: 1rem;
+    
+    }
+
+    .contenedor_padre {
+        padding: 10px; 
+        border-radius: 5px; 
+        width: 15rem;
+    }
+
+    .contenedor_padre img {
+        width: 8rem; 
+        height: 8rem; 
+    }
+
+    .titulo {
+        font-size: 1.2em; 
+    }
+
+    .descripcion {
+        font-size: 0.9em; 
+    }
+
+    .botoness {
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+
+    .botoness a {
+        padding: 8px 12px; 
+        font-size: 0.9rem; 
+        width: 7rem; 
+        height: 2.5rem; 
+    }
+}
